@@ -1,0 +1,35 @@
+# Welcome to my Markdown Previewer!
+
+## freeCodeCamp - Front-End Libraries Certification Project
+
+Feel free to check my freeCodeCamp [profile](https://www.freecodecamp.org/GuilhermeBF)
+
+### Some examples:
+
+inline code: `<div class="example"></div>`
+
+> Block Quotes,
+
+**some bold text**, _italic ones_, **_why not both?_**
+
+```
+// How about this multi-line code?
+
+  const coding = {
+    challenging: true,
+    exciting: true,
+    fun: true,
+    boring: false
+  } 
+```
+
+So we can say that coding is:
+
+1. Challenging;
+1. Exciting;
+1. Fun;
+1. (I used only 1s for this list!)
+
+And of course images! I'll borrow freeCodeCamp's for this one:
+
+![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)

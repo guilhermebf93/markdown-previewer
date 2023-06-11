@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500&display=swap');
+
+:root {
+  --color1: #344e41;
+  --color2: #3a5a40;
+  --color3: #588157;
+  --color4: #a3b18a;
+  --color5: #dad7cd;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  height: 100vh;
+  font-family: Roboto Slab, sans-serif;
+  background: linear-gradient(180deg, var(--color1) 70%, var(--color2) 100%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar {
+  width: 10pt;  
+  height: 10pt;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+::-webkit-scrollbar-track {
+  background: var(--color4);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color1);
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--color4);
+}
+
+.editor {
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 70%;
+  margin: 10pt auto;
+  overflow: hidden;
+  background: -webkit-linear-gradient(270deg, var(--color3) 30%, var(--color4) 100%);
 }
 
-.App-link {
-  color: #61dafb;
+label {
+  text-align: center;
+  padding: 3pt;
+  background-color: var(--color3);  
+  color: var(--color5); 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+textarea {
+  width: 95%;
+  margin: 0 auto 10pt;
+  resize: none;
+  background-color: var(--color5);
+  color: var(--color1);
+  cursor: auto;
+}
+
+.preview {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 10pt auto 20pt;  
+  height: min-content;
+  max-height: 400px;
+}
+
+#preview {
+  padding: 0 5pt;
+  font-size: 15px;
+  overflow: scroll;
+  background-color: var(--color5);
+  color: var(--color1);  
+  padding: 10pt; 
 }
